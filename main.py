@@ -18,9 +18,9 @@ def track():
     return Response(pixel, mimetype='image/png')
 
 # Click Tracking Apple
-@app.route('/clickApple', methods=['GET'])
+@app.route('/click_Apple', methods=['GET'])
 def click():
-    global email_click_count
+    global email_click_count_A
     email_click_count_A += 1
 
     # Get the original destination URL
@@ -30,9 +30,9 @@ def click():
     return redirect(destination_url)
 
 # Click Tracking Google
-@app.route('/clickGoogle', methods=['GET'])
+@app.route('/click_Google', methods=['GET'])
 def click():
-    global email_click_count
+    global email_click_count_G
     email_click_count_G += 1
 
     # Get the original destination URL
