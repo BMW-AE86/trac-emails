@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 # Global variables for tracking
 email_open_count = 0
-email_click_count = 0
+email_click_count_A = 0
+email_click_count_G = 0
 
 # Email Open Tracking
 @app.route('/track', methods=['GET'])
